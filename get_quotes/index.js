@@ -31,6 +31,23 @@ async function getquotes(url) {
   
 
 };
-getquotes('https://www.goodreads.com/quotes/tag/inspirational?page=88')
+async function getminion(url){
+  const browser = await puppeteer.launch({defaultViewport: null});
+  console.log('väntar på sidan')
+  const page = await browser.newPage();
+  await page.goto(url);
+  await page.waitFor('body > div:nth-child(4) > div > ul > li:nth-child(1) > div.png_png.png_imgs > a > img')
+  let imageHref = await page.$$eval('.png_png.png_imgs > a > img',sel => {
+      return sel.map(string => {
+        return string.getAttribute('src')
+      }); ;
+  });
+  imageHref.forEach((link,index)=>{
+    fs.appendFile('Link.txt',link+'\n',function(err){if(err){throw err;}})
+  })
 
-console.log(quotes.length)
+  await browser.close();
+  console.log('Hämtade '+imageHref.length.toString()+' länkar')
+}
+getminion('http://pngimg.com/imgs/heroes/minions/')
+
