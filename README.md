@@ -1,5 +1,5 @@
 # Quote-bot
-Qoute bot är en AI som genererar [citat](https://colab.research.google.com/drive/1JbndjII3nfG2BGXTWXOailEvpzqeEkl9#scrollTo=2RJfgRriWIbT) baserad på på data från andra inspirerande citat. Men den skapar även bilder baserade på [Minioner](https://colab.research.google.com/drive/1V1pZKiRDDPM_ITLF7Xuhh-qQa_fSpwBt#scrollTo=094lgkW5rWOd) som den sedan lägger ihop och postar på twitter
+Qoute bot är en AI som genererar citat baserad på på data från andra inspirerande citat. Men den skapar även bilder baserade på Minioner som den sedan lägger ihop och postar på [twitter]()
 # Filer
 ## Heroku
 * /Tweet.py- denna fil är själva boten som lägger upp tweets
