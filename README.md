@@ -1,5 +1,5 @@
 # Quote-bot
-Qoute bot är en AI som genererar citat baserad på på data från andra inspirerande citat. Men den skapar även bilder baserade på Minioner som den sedan lägger ihop och postar på [twitter]()
+Qoute bot är en AI som genererar citat baserad på på data från andra inspirerande citat. Men den skapar även bilder baserade på Minioner som den sedan lägger ihop och postar på [twitter](https://twitter.com/Jesusdaddy6)
 # Filer
 ## Heroku
 * /Tweet.py- denna fil är själva boten som lägger upp tweets
