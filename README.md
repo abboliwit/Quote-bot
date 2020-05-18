@@ -1,5 +1,5 @@
 # Quote-bot
-Qoute bot är en AI som genererar citat baserad på på data från andra inspirerande citat. Men den skapar även bilder baserade på Minioner som den sedan lägger ihop och postar på [twitter](https://twitter.com/Jesusdaddy6)
+Qoute bot är en AI som genererar citat baserad på på data från andra inspirerande citat. Men den skapar även bilder baserade på Minioner som den sedan lägger ihop och postar på [twitter](https://twitter.com/Jesusdaddy6). Citaten generas av en NLP(natural language processor) som läser av ordföljd menings byggnad och mer språkbaserade strukturer. Algoritmen skapar egna strukturer baserade på de citat som redan har hämtas in. Dessutom så skapas en bild baserat på minioner med hjälp av stylegan. Den har tränats upp genom att försöka skapa egna bilder som bedöms på likheten.Därefter så ändras vikterna inför nästa iteration. SLutligen så genereras ett citat och en bild som sedan läggs samman för att sedan bli postade på twitter. 
 # Filer
 ## Heroku
 * /Tweet.py- denna fil är själva boten som lägger upp tweets
@@ -28,4 +28,4 @@ Just Nu måste man manuellt köra filen på datorn för att generera bilder. Men
 I början så vart lägden av citaten alldeles för långa och för många, de forstatte långt utan för bilden. Men jag löste detta genom att della upp alla citat för att sedan dela upp varje rad i tre ord. Så texten förblev inom bilden.
 
 # Framtida framsteg
-Jag skulle kunna klura ut ett sätt att få upp koden på heroku så att den postar bilder för alltid. Dessutom behöver vikten för att skapaminioner tränas mer.
+Jag skulle kunna klura ut ett sätt att få upp koden på heroku så att den postar bilder för alltid. Dessutom behöver vikten för att skapa minioner tränas mer.
