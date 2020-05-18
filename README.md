@@ -10,8 +10,8 @@ Qoute bot är en AI som genererar citat baserad på på data från andra inspire
 * index.js - Ett puppeter script som hämtar citat [här](https://www.goodreads.com) och Minioner [här](http://pngimg.com/imgs/heroes/minions/)
 * quotes.txt - här sammals all citat som samlats från index.js alla citat delas upp av en "\n\n"
 ## Colab
-* [Skapa Minioner](https://colab.research.google.com/drive/1V1pZKiRDDPM_ITLF7Xuhh-qQa_fSpwBt#scrollTo=094lgkW5rWOd)- Här tränar vi vikterna för att skapa Minioner
-* [Skapa citat](https://colab.research.google.com/drive/1JbndjII3nfG2BGXTWXOailEvpzqeEkl9#scrollTo=2RJfgRriWIbT) - här tränas vikterna som skapar citaten
+* [Skapa Minioner](https://colab.research.google.com/drive/1V1pZKiRDDPM_ITLF7Xuhh-qQa_fSpwBt?usp=sharing)- Här tränar vi vikterna för att skapa Minioner
+* [Skapa citat](https://colab.research.google.com/drive/1JbndjII3nfG2BGXTWXOailEvpzqeEkl9?usp=sharing) - här tränas vikterna som skapar citaten
 
 # Krav
 gpt_2_simple ```pip install gpt_2_simple==0.7.1 ```
