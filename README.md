@@ -19,13 +19,13 @@ gpt_2_simple ```pip install gpt_2_simple==0.7.1 ```
 tensorflow 1.14.0 ```pip install tensorflow==1.14.0```
 
 # Användning 
-För att använda denna bot på ditt twitterkonto, så behövs ett [devkonto](https://developer.twitter.com/en/apply-for-access). Sedan byter man ut mina Client id och client secret mot ens egna i Twitter.py.Efter det är det bra att kör Twitter.py
+För att använda denna bot på ditt twitterkonto, så behövs ett [devkonto](https://developer.twitter.com/en/apply-for-access). Sedan byter man ut mina Client id och client secret mot ens egna i Twitter.py.Efter det är det bra att köra Twitter.py
 
 # Problem och lösningar
 ## Heroku
 Just Nu måste man manuellt köra filen på datorn för att generera bilder. Men det kan ändras genom att ladda upp och köra koden på Heroku.Tyvärr så är de nödvändiga filerna för stylegan allderes för stora och jag har ännu inte lyckats arbeta runt det problemet.
 ## Längd 
-I början så vart lägden av citaten alldeles för långa och för många, de forstatte långt utan för bilden. Men jag löste detta genom att della upp alla citat för att sedan dela upp varje rad i tre ord. Så texten förblev inom bilden.
+I början så vart lägden av citaten alldeles för långa och för många, de forstatte långt utan för bilden. Men jag löste detta genom att dela upp alla citat.Detta lyckades jag med då tränings filen jag skapade bestod hade två nya rader  mellan citaten, när programmet letade efter mönster så kopierade den då detta vilket resulterade i att de generaerade citaten vart separerade med två rader. Vilket var enkelt att identifiera via kod. Därefter för så delades varje rad upp i tre ord så att texten förblev inom bilden.
 
 # Framtida framsteg
-Jag skulle kunna klura ut ett sätt att få upp koden på heroku så att den postar bilder för alltid. Dessutom behöver vikten för att skapa minioner tränas mer.
+Jag skulle kunna försöka minimera storleken på style-GAN filen så att man kan automatisera processen genom att ladda upp all kod till heroku. Dessutom behöver vikten för att skapa minioner tränas mer så att bilderna blir bättre.
